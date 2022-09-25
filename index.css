@@ -1,0 +1,246 @@
+/*Header string*/
+.header{
+	text-align: center;
+}
+/* subheader edits*/
+.sub{
+	font-size: 24px;
+}
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  position: center;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: blue;
+  color: white;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: blue;
+  color: white;
+}
+
+
+/* Hero Image Title */
+.intro{
+	font-size: 48px;
+	font-family: Papyrus;
+}
+
+/* Hero Image button*/
+.Explore{
+	font-size:28px;
+	color: black;
+	background-color: red;
+}
+
+/*Hero image subtitle*/
+.welcome{
+	font-size: 36px;
+	font-family: papyrus;
+}
+
+
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (Cyndaquil.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Cyndaquil.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* body text font*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/*box sizing*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/*Column spacing*/
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/*card shadow*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+/*about me facts*/
+.BlockFact{
+	font-size:24px;
+}
+
+/*School font size*/
+.School{
+	font-size:24px;
+}
+
+/*about section set-up*/
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: green;
+  color: white;
+}
+
+/*Container*/
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*title*/
+.title {
+  color: black;
+}
+
+/*contact button*/
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: green;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  position: center;
+  
+}
+/*contact button backgroud*/
+.button:hover {
+  background-color: #555;
+}
+
+/*max width*/
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*Contact button*/
+.button1{
+	background-color: blue;
+	font-size: 28px;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+/*submit butotn*/
+input[type=submit] {
+  background-color: blue;
+  color: black;
+  padding: 12px 20px;
+  border: black;
+  cursor: pointer;
+  font-size:24px;
+}
+
+/*submit button hover*/ 
+input[type=submit]:hover {
+  background-color: black;
+  padding: 10px;
+}
+
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: green;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
